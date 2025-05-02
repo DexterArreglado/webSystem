@@ -1,16 +1,15 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
- 
-body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
+}
+
+body {
+  background-color: #fff;
   color: #333;
 }
- 
+
 .hero-section {
   background: url('Dashboard/img1.png') no-repeat center center/cover;
   color: white;
@@ -20,101 +19,80 @@ body {
   justify-content: space-between;
   padding: 20px;
 }
- 
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
- 
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-} 
- 
+}
+
 .nav-links a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
-  color: #555;
   font-weight: 500;
-} 
- 
+}
+
 .nav-links a:hover {
   text-decoration: underline;
-} 
- 
+}
+
 .hero-content {
-  padding-bottom: 60px;
   text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 20px;
-} 
- 
-.about-section {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-} 
- 
+  max-width: 600px;
+  margin-top: auto;
+  padding: 40px 0;
+}
+
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #222;
+  line-height: 1.2;
 }
 
-/* Lookup Form */
-.lookup-form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.hero-content p {
+  font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
-.lookup-form input[type="text"] {
-  flex: 1;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.hero-buttons {
+  display: flex;
+  gap: 15px;
 }
 
-.lookup-form button {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #0077cc;
-  color: #fff;
+.btn-primary, .btn-secondary {
+  padding: 12px 25px;
   border: none;
-  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-.lookup-form button:hover {
-  background-color: #005fa3;
+.btn-primary {
+  background-color: #f4b400;
+  color: black;
 }
 
-.booking-details {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+.btn-primary:hover {
+  background-color: #d99e00;
 }
 
-.booking-details h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
 }
 
-.invisible-table {
-  width: 100%;
-  border-collapse: collapse;
+.btn-secondary:hover {
+  background-color: white;
+  color: black;
 }
 
 .about-section {
@@ -130,14 +108,14 @@ body {
 
 .reference-section {
   padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
 }
+
 .reference-section h2 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
+
 .ref-input {
   padding: 12px;
   width: 250px;

@@ -55,9 +55,12 @@ body {
   line-height: 1.2;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.hero-content {
+  padding-bottom: 80px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 .hero-buttons {
@@ -97,7 +100,8 @@ body {
 
 .about-section {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 

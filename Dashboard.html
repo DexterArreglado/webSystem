@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Website</title>
-    <link rel="Stylesheet" href="Dashboard.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Booking</title>
+  <link rel="stylesheet" href="Dashboard.css"/>
 </head>
 <body>
-    <div class="container1">
-    <header class="header">
-        <div class="nav">
-          <h1>Wedding Website</h1>
-          <nav>
-            <a href="https://example.com">Home</a>
-            <a href="https://example.com">Services & Amenities</a>
-            <a href="https://example.com">Contact Us</a>
-          </nav>
-        </div>
-      </header>
-    <div class="container">
-        <img src="Dashboard/img1.png" alt="fsimage" class="image" id="image">
-        <div class="buttons">
-            <button class="prev" id="prev">&#10094;</button>
-            <button class="next" id="next">&#10095;</button>
-        </div>
+  <header class="hero-section">
+    <div class="navbar">
+      <div class="logo">Wedding Bliss</div>
+      <nav class="nav-links">
+        <a href="https://example.com">Home</a>
+        <a href="https://example.com">Services & Amenities</a>
+        <a href="https://example.com">Contact Us</a>
+      </nav>
     </div>
-</div>
+    <div class="hero-content">
+      <h1>MAKE YOUR DREAM WEDDING UNFORGETTABLE</h1>
+      <p>Plan with us and celebrate love that lasts forever.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Book Now</a>
+        <a href="#ref-lookup" class="btn-secondary">Check Booking</a>
+      </div>
+    </div>
+  </header>
 
-<div class="about">
+  <section class="about-section">
     <h2>About</h2>
-    <p>This is a wedding booking website, Welcome!</p>
-</div>
+    <p>Welcome to our wedding booking website, where your special day becomes a beautiful reality.</p>
+  </section>
+
+  <section class="reference-section" id="ref-lookup">
+    <h2>Already Booked?</h2>
+    <p>Enter your reference number to view your booking details:</p>
+    <input type="text" placeholder="Enter Reference Number" class="ref-input"/>
+    <button class="btn-primary">Submit</button>
+  </section>
 </body>
 </html>

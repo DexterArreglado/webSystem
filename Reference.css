@@ -4,41 +4,69 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     margin-bottom: 40px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .nav h1 {
     font-size: 24px;
     margin: 0;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .nav nav a {
     margin-left: 20px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
   }
+<<<<<<< HEAD
 
   .nav nav a:hover {
     color: #f4b400;
   }
 
+=======
+  
+  .nav nav a:hover {
+    color: #f4b400;
+  }
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   main h2 {
     text-align: start;
     margin-bottom: 20px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .invisible-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1em;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .invisible-table th,
   .invisible-table td {
     padding: 0.75em;
@@ -46,31 +74,51 @@
     vertical-align: middle;
     text-align: left;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .invisible-table thead th {
     font-weight: bold;
     background-color: #f4f4f4;
     color: #333;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .invisible-table td:nth-child(3),
   .invisible-table th:nth-child(3) {
     width: 40px;
     text-align: center;
     white-space: nowrap;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .status.complete {
     color: green;
     font-weight: bold;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   .status.incomplete {
     color: red;
     font-weight: bold;
   }
+<<<<<<< HEAD
 
   .status.unknown {
     color: gray;
     font-weight: bold;
   }
+=======
+  
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5

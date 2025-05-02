@@ -4,12 +4,20 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 body {
   background-color: #fff;
   color: #333;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 .hero-section {
   background: url('Dashboard/img1.png') no-repeat center center/cover;
   color: white;
@@ -19,23 +27,37 @@ body {
   justify-content: space-between;
   padding: 20px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
  
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
 } 
  
+=======
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 .nav-links a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
+<<<<<<< HEAD
 } 
  
 .nav-links a:hover {
@@ -44,16 +66,31 @@ body {
  
 .hero-content {
   padding-bottom: 60px;
+=======
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero-content {
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
   text-align: left;
   max-width: 800px;
   margin: 0 auto;
   padding: 60px 20px;
+<<<<<<< HEAD
 } 
  
+=======
+}
+
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 .about-section {
   padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
+<<<<<<< HEAD
   text-align: center;
 } 
  
@@ -109,18 +146,81 @@ body {
   text-align: center;
 }
 
+=======
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 25px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-primary {
+  background-color: #f4b400;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: #d99e00;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: black;
+}
+
+.about-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 .about-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 .reference-section {
   padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5
 .reference-section h2 {
   font-size: 2rem;
   margin-bottom: 15px;
@@ -133,4 +233,8 @@ body {
   margin-right: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0a831404e5e5eb92e808b9b9b66dff43d63679f5

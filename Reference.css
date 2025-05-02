@@ -4,19 +4,16 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     margin-bottom: 40px;
   }
-
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
-
   .nav h1 {
     font-size: 24px;
     margin: 0;
   }
-
   .nav nav a {
     margin-left: 20px;
     text-decoration: none;
@@ -32,13 +29,11 @@
     text-align: start;
     margin-bottom: 20px;
   }
-
   .invisible-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1em;
   }
-
   .invisible-table th,
   .invisible-table td {
     padding: 0.75em;
@@ -46,25 +41,21 @@
     vertical-align: middle;
     text-align: left;
   }
-
   .invisible-table thead th {
     font-weight: bold;
     background-color: #f4f4f4;
     color: #333;
   }
-
   .invisible-table td:nth-child(3),
   .invisible-table th:nth-child(3) {
     width: 40px;
     text-align: center;
     white-space: nowrap;
   }
-
   .status.complete {
     color: green;
     font-weight: bold;
   }
-
   .status.incomplete {
     color: red;
     font-weight: bold;

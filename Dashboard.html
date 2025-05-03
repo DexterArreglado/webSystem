@@ -6,22 +6,21 @@
   <title>Wedding Booking</title>
   <link rel="stylesheet" href="Dashboard.css"/>
 </head>
-
 <body>
   <header class="hero-section">
     <div class="navbar">
       <div class="logo">Wedding Website</div>
       <nav class="nav-links">
-        <a href="http://127.0.0.1:5500/Dashboard.html">Home</a>
-        <a href="https://example.com">Services & Amenities</a>
-        <a href="https://example.com">Contact Us</a>
+        <a href="Dashboard.html">Home</a>
+        <a href="#">Services & Amenities</a>
+        <a href="#">Contact Us</a>
       </nav>
     </div>
     <div class="hero-content">
       <h1>MAKE YOUR DREAM WEDDING UNFORGETTABLE</h1>
       <p>Plan with us and celebrate love that lasts forever.</p>
       <div class="hero-buttons">
-        <a href="http://127.0.0.1:5500/Booking.html" class="btn-primary">Book Now</a>
+        <a href="Booking.html" class="btn-primary">Book Now</a>
         <a href="#ref-lookup" class="btn-secondary">Check Booking</a>
       </div>
     </div>
@@ -35,8 +34,10 @@
   <section class="reference-section" id="ref-lookup">
     <h2>Already Booked?</h2>
     <p>Enter your reference number to view your booking details:</p>
-    <input type="text" placeholder="Enter Reference Number" class="ref-input"/>
-    <button href="http://127.0.0.1:5500/Reference.html" class="btn-primary">Submit</button>
+    <input type="text" id="referenceInput" placeholder="Enter Reference Number" class="ref-input"/>
+    <button class="btn-primary" onclick="lookupReference()">Submit</button>
   </section>
+
+  <script src="Dashboard.js"></script>
 </body>
 </html>

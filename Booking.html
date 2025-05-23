@@ -4,146 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
-    <link rel="Stylesheet" href="Booking.css">
+    <link rel="stylesheet" href="Booking.css">
     <link rel="icon" href="path/to/your/favicon.ico">
-
-
 </head>
 <body>
     <h1>Wedding Booking Form</h1>
 
     <form id="weddingForm">
-      <div class ="BookingfrmBox">
-        <div class ="txtBox1">
-            <div class="input">
-                <label for="Groomfname">Groom's First Name</label>
-                <input type="text" id="groomFname" name="groomFname">
+        <div class="BookingfrmBox">
+            <div class="txtBox1">
+                <div class="input">
+                    <label for="Groomfname">Groom's First Name</label>
+                    <input type="text" id="groomFname" name="groomFname">
+                </div>
+            </div>
+
+            <div class="txtBox2">
+                <div class="input">
+                    <label for="Groomlname">Groom's Last Name</label>
+                    <input type="text" id="groomLname" name="groomLname">
+                </div>
+            </div>
+
+            <div class="txtBox3">
+                <div class="input">
+                    <label for="Bridefname">Bride's First Name</label>
+                    <input type="text" id="brideFname" name="brideFname">
+                </div>
+            </div>
+
+            <div class="txtbox4">
+                <div class="input">
+                    <label for="Bridelname">Bride's Last Name</label>
+                    <input type="text" id="brideLname" name="brideLname">
+                </div>
+            </div>
+
+            <div class="txtbox5">
+                <div class="input">
+                    <label for="Email">Email Address</label>
+                    <input type="text" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="txtbox6">
+                <div class="input">
+                    <label for="Contact">Contact Number</label>
+                    <input type="text" id="contact" name="contact">
+                </div>
+            </div>
+
+            <div class="txtbox7">
+                <div class="input">
+                    <label for="wedDate">Wedding Planning Date</label>
+                    <input type="text" id="date" name="date">
+                </div>
+            </div>
+
+            <div class="txtbox8">
+                <div class="input">
+                    <label for="Venue">Venue</label>
+                    <input type="text" id="venue" name="venue">
+                </div>
+            </div>
+
+            <div class="txtbox9">
+                <div class="input">
+                    <label for="Pax">Pax</label>
+                    <input type="text" id="pax" name="pax">
+                </div>
+            </div>
+
+            <div class="txtbox10">
+                <div class="input">
+                    <label for="Location">Location</label>
+                    <input type="text" id="location" name="location">
+                </div>
+            </div>
+
+            <div class="questionGrid">
+                <div class="question">
+                    <label>Are we providing photographers?</label>
+                    <div class="optionGroup">
+                        <label class="radioLabel">
+                            <input type="radio" name="photographers" value="no"> No
+                        </label>
+                        <label class="radioLabel">
+                            <input type="radio" name="photographers" value="yes"> If yes
+                            <select id="photographersSelect">
+                                <option>Dexter Photography</option>
+                                <option>Jagan Studios</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>Are we providing caterings?</label>
+                    <div class="optionGroup">
+                        <label class="radioLabel">
+                            <input type="radio" name="caterings" value="no"> No
+                        </label>
+                        <label class="radioLabel">
+                            <input type="radio" name="caterings" value="yes"> If yes
+                            <select id="cateringsSelect">
+                                <option>Mhon'ske</option>
+                                <option>Barbs Kitchen</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>Are we providing entertainers?</label>
+                    <div class="optionGroup">
+                        <label class="radioLabel">
+                            <input type="radio" name="entertainers" value="no"> No
+                        </label>
+                        <label class="radioLabel">
+                            <input type="radio" name="entertainers" value="yes"> If yes
+                            <select id="entertainersSelect">
+                                <option>Jeric's Entertainers</option>
+                                <option>Janu's Entertainers</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class ="txtBox2">
-            <div class ="input">
-                <label for="Groomlname">Groom's Last Name</label>
-                <input type="text" id="groomLname" name="groomLname">
-            </div>
+        <div class="submitButton">
+            <button type="submit" class="submit" id="submit">Submit</button>
         </div>
-
-        <div class ="txtBox3">
-            <div class ="input">
-                <label for="Bridefname">Bride's First Name</label>
-                <input type="text" id="brideFname" name="brideFname">
-            </div>
-        </div>
-
-        <div class ="txtbox4">
-            <div class="input">
-                <label for="Bridelname">Bride's Last Name</label>
-                <input type="text" id="brideLname" name="brideLname">
-            </div>
-        </div>
-
-        <div class ="txtbox5">
-            <div class="input">
-                <label for="Email">Email Address</label>
-                <input type="text" id="email" name="email">
-            </div>
-        </div>
-
-        <div class ="txtbox6">
-            <div class="input">
-                <label for="Contact">Contact Number</label>
-                <input type="text" id="contact" name="contact">
-            </div>
-        </div>
-
-        <div class ="txtbox7">
-            <div class="input">
-                <label for="wedDate">Wedding Planning Date</label>
-                <input type="text" id="date" name="date">
-            </div>
-        </div>
-
-        <div class ="txtbox8">
-            <div class="input">
-                <label for="Venue">Venue</label>
-                <input type="text" id="venue" name="venue">
-            </div>
-        </div>
-
-        <div class ="txtbox9">
-            <div class="input">
-                <label for="Pax">Pax</label>
-                <input type="text" id="pax" name="pax">
-            </div>
-        </div>
-
-        <div class ="txtbox10">
-            <div class="input">
-                <label for="Location">Location</label>
-                <input type="text" id="location" name="location">
-            </div>
-        </div>
-
-
-        <div class="questionGrid">
-        <div class="question">
-            <label>Are we providing photographers?</label>
-            <div class="optionGroup">
-              <label class="radioLabel">
-                <input type="radio" name="photographers" value="no"> No
-              </label>
-              <label class="radioLabel">
-                <input type="radio" name="photographers" value="yes"> If yes
-                <select>
-                  <option>Select</option>
-                  <option>Example 1</option>
-                  <option>Example 2</option>
-                </select>
-              </label>
-            </div>
-          </div>
-        
-        <div class="question">
-            <label>Are we providing caterings?</label>
-            <div class="optionGroup">
-              <label class="radioLabel">
-                <input type="radio" name="caterings" value="no"> No
-              </label>
-              <label class="radioLabel">
-                <input type="radio" name="caterings" value="yes"> If yes
-                <select>
-                  <option>Select</option>
-                  <option>Example 1</option>
-                  <option>Example 2</option>
-                </select>
-              </label>
-            </div>
-          </div>
-        
-          <div class="question">
-            <label>Are we providing entertainers?</label>
-            <div class="optionGroup">
-              <label class="radioLabel">
-                <input type="radio" name="entertainers" value="no"> No
-              </label>
-              <label class="radioLabel">
-                <input type="radio" name="entertainers" value="yes"> If yes
-                <select>
-                  <option>Select</option>
-                  <option>Example 1</option>
-                  <option>Example 2</option>
-                </select>
-              </label>
-            </div>
-          </div>
-        </div>
-</div>
-
-<div class="submitButton">
-    <button type="submit" class="submit" id="submit">Submit</button>
-</div>
     </form>
     <script type="module" src="Booking.js"></script>
-
 </body>
 </html>

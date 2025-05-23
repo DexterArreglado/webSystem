@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBsMj6w3dA02DfWpARzznHYFE0UW9hvR-g",
@@ -30,9 +30,17 @@ if (weddingForm) {
     const pax = document.getElementById("pax").value;
     const location = document.getElementById("location").value;
 
-    const photographers = document.querySelector('input[name="photographers"]:checked')?.value;
-    const caterings = document.querySelector('input[name="caterings"]:checked')?.value;
-    const entertainers = document.querySelector('input[name="entertainers"]:checked')?.value;
+    const photographersRadio = document.querySelector('input[name="photographers"]:checked')?.value;
+    const photographersSelect = document.getElementById("photographersSelect").value;
+    const photographers = (photographersRadio === "yes" && photographersSelect !== "Select") ? photographersSelect : "N/A";
+
+    const cateringsRadio = document.querySelector('input[name="caterings"]:checked')?.value;
+    const cateringsSelect = document.getElementById("cateringsSelect").value;
+    const caterings = (cateringsRadio === "yes" && cateringsSelect !== "Select") ? cateringsSelect : "N/A";
+
+    const entertainersRadio = document.querySelector('input[name="entertainers"]:checked')?.value;
+    const entertainersSelect = document.getElementById("entertainersSelect").value;
+    const entertainers = (entertainersRadio === "yes" && entertainersSelect !== "Select") ? entertainersSelect : "N/A";
 
     try {
       await addDoc(collection(db, "weddingBookings"), {
@@ -49,7 +57,7 @@ if (weddingForm) {
         photographers,
         caterings,
         entertainers,
-        status: "incomplete",
+        status: "Not Ready",
         createdAt: new Date()
       });
 
@@ -61,58 +69,3 @@ if (weddingForm) {
     }
   });
 }
-
-async function fetchBookings() {
-  const bookingsCollection = collection(db, "weddingBookings");
-  const querySnapshot = await getDocs(bookingsCollection);
-
-  let bookingTableBody = document.getElementById("bookingTableBody");
-
-  if (!bookingTableBody) {
-    const table = document.createElement("table");
-    const thead = document.createElement("thead");
-    const tbody = document.createElement("tbody");
-
-    const headerRow = document.createElement("tr");
-    const nameHeader = document.createElement("th");
-    nameHeader.textContent = "Name";
-    headerRow.appendChild(nameHeader);
-    const referenceHeader = document.createElement("th");
-    referenceHeader.textContent = "Reference";
-    headerRow.appendChild(referenceHeader);
-    const statusHeader = document.createElement("th");
-    statusHeader.textContent = "Status";
-    headerRow.appendChild(statusHeader);
-
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
-    table.appendChild(tbody);
-    document.body.appendChild(table);
-
-    bookingTableBody = tbody;
-  }
-
-  bookingTableBody.innerHTML = ''; 
-
-  querySnapshot.forEach((doc) => {
-    const data = doc.data();
-    const row = document.createElement("tr");
-
-    const nameCell = document.createElement("td");
-    nameCell.textContent = `${data.groomFname} ${data.groomLname} & ${data.brideFname} ${data.brideLname}`;
-    row.appendChild(nameCell);
-
-    const referenceCell = document.createElement("td");
-    referenceCell.textContent = doc.id;
-    row.appendChild(referenceCell);
-
-    const statusCell = document.createElement("td");
-    const status = data.status === "complete" ? "✔" : "X";
-    statusCell.classList.add(status === "✔" ? "complete" : "incomplete");
-    statusCell.textContent = status;
-    row.appendChild(statusCell);
-
-    bookingTableBody.appendChild(row);
-  });
-}
-window.onload = fetchBookings;

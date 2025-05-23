@@ -50,7 +50,7 @@ async function loadBooking() {
       <p><strong>Status:</strong> ${data.status}</p>
     `;
 
-    if (data.status === "incomplete") {
+    if (data.status === "Not Ready") {
       cancelBtn.style.display = "inline-block";
       cancelBtn.onclick = async () => {
         const confirmed = confirm("Are you sure you want to cancel this booking?");
@@ -60,6 +60,12 @@ async function loadBooking() {
           window.location.href = "Dashboard.html";
         }
       };
+    } else {
+      cancelBtn.style.display = "none";
+      const msg = document.createElement("p");
+      msg.style.color = "red";
+      msg.textContent = "This booking is marked as 'Ready' and cannot be cancelled.";
+      display.appendChild(msg);
     }
 
   } catch (error) {
